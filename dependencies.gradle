@@ -1,5 +1,10 @@
 ext {
 
+    //Android config
+    minSDK = 20
+    targetSDK = 31
+    compileSDK = 31
+
     kotlinVersion = '1.6.10'
 
     buildTools = '7.0.4'
@@ -12,11 +17,27 @@ ext {
     //Koin
     koinVersion = '1.0.2'
 
+    //Retrofit
+    retrofitVersion = '2.3.0'
+
+    //Gson
+    gsonVersion = '2.8.5'
+
+    //Room
+    roomVersion = '2.1.0-alpha02'
+
     dependencies = [
-            kotlin          : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
-            rxJava          : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
-            rxKotlin        : "io.reactivex.rxkotlin:$rxKotlinVersion",
-            rxAndroid       : "io.reactivex.rxandroid:$rxAndroidVersion",
-            koin            : "org.koin:koin-android:$koinVersion"
+            kotlin                  : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
+            rxJava                  : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+            rxKotlin                : "io.reactivex.rxkotlin:$rxKotlinVersion",
+            rxAndroid               : "io.reactivex.rxandroid:$rxAndroidVersion",
+            koin                    : "org.koin:koin-android:$koinVersion",
+            retrofit                : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitRxAdapter       : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            retrofitGsonConverter   : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            gson                    : "com.google.code.gson:gson:$gsonVersion",
+            room                    : "androidx.room:room-runtime:$roomVersion",
+            roomRxJava              : "androidx.room:room-rxjava2:$roomVersion",
+            roomCompiler            : "androidx.room:room-compiler:$roomVersion"
     ]
 }

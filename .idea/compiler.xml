@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.8">
       <module name="Modularization.app" target="11" />
+      <module name="Modularization.data" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
